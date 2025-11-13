@@ -779,15 +779,13 @@ O sistema adotará uma arquitetura em três camadas (3-tier) com separação cla
 | Marco | Data Prevista | Entregável |
 |-------|---------------|------------|
 | **M0: Apresentação e Aprovação no Congresso** | 29/10/2025 ✅ | Proposta aprovada no XV Congresso de Iniciação Científica |
-| **M1: RFC Completo** | 30/11/2025 ✅ | Documento RFC com especificação técnica detalhada |
+| **M1: RFC Completo** | 30/11/2025 | Documento RFC com especificação técnica detalhada |
 | **M2: Dataset Preparado** | 15/01/2026 | Dataset estruturado e validado para treinamento |
 | **M3: Modelo Baseline Treinado** | 15/02/2026 | Primeiro modelo funcional com métricas |
 | **M4: Modelo Otimizado** | 15/03/2026 | Modelo final com R² > 0.90 |
 | **M5: Entrega Portfólio I** | 30/03/2026 | Apresentação de resultados do modelo |
 | **M6: Protótipo de Interface** | 30/04/2026 | UI funcional com integração básica |
-| **M7: Sistema Completo** | 30/06/2026 | Aplicação web totalmente integrada |
-| **M8: Deploy em Produção Interna** | 30/07/2026 | Sistema acessível na rede da Famac |
-| **M9: Entrega Portfólio II** | 30/08/2026 | Apresentação final e entrega à Famac |
+| **M7: Sistema Completo** | 30/06/2026 | Aplicação web mvp totalmente integrada |
 
 ### 4.3. Riscos e Mitigações
 
