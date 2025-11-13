@@ -137,7 +137,7 @@ O projeto **NÃO** abrangerá:
 
 | Norma/Legislação | Aplicação no Projeto |
 |------------------|----------------------|
-| **LGPD (Lei nº 13.709/2018)** | Proteção de dados operacionais e informações de clientes da Famac. Coleta mínima de informações, anonimização de dados de clientes finais, política de privacidade interna, segurança no armazenamento de dados proprietários. |
+| **LGPD (Lei nº 13.709/2018)** | Proteção de dados operacionais e especificações técnicas das bombas. Coleta mínima de informações, anonimização quando necessário, política de privacidade interna, segurança no armazenamento de dados proprietários. |
 | **ISO/IEC 27001** | Segurança da informação para armazenamento de dados históricos proprietários da Famac e proteção do modelo treinado (ativo intelectual da empresa). |
 | **Licenças de Software (MIT, Apache, BSD)** | Uso adequado de bibliotecas open-source (scikit-learn, TensorFlow, PyTorch, pandas, NumPy). Atribuição de créditos conforme licenciamento. |
 | **OWASP Top 10** | Segurança da aplicação web interna (proteção contra injeção, XSS, autenticação fraca), restringindo acesso apenas a colaboradores autorizados da Famac. |
@@ -567,7 +567,7 @@ O sistema adotará uma arquitetura em três camadas (3-tier) com separação cla
 | Chart.js | MIT | Uso livre, inclusive comercial |
 | XGBoost | Apache 2.0 | Uso livre, patentes protegidas |
 
-**Nota sobre Licenciamento**: Todo o código desenvolvido será distribuído sob licença MIT, permitindo uso, modificação e distribuição livre, com atribuição de créditos.
+**Nota sobre Licenciamento**: O código desenvolvido é propriedade exclusiva da Famac Indústria de Máquinas Ltda e não será disponibilizado publicamente, uma vez que faz parte de uma aplicação de uso interno e confidencial da empresa.
 
 ---
 
@@ -598,7 +598,6 @@ O sistema adotará uma arquitetura em três camadas (3-tier) com separação cla
 **Proteção de Dados Proprietários:**
 - Criptografia em trânsito (TLS 1.3)
 - Criptografia em repouso para dados proprietários da Famac (AES-256)
-- Anonimização de dados de clientes finais da Famac
 - Política de retenção de dados (LGPD compliance)
 - Backup criptografado em storage local da empresa
 - Sem transmissão de dados para serviços externos/cloud pública
@@ -661,9 +660,8 @@ O sistema adotará uma arquitetura em três camadas (3-tier) com separação cla
 
 **Privacidade:**
 - Não coletar dados pessoais desnecessários
-- Anonimização de dados de clientes/empresas
-- Política clara de uso de dados
-- Conformidade com LGPD
+- Política clara de uso de dados técnicos e operacionais
+- Conformidade com LGPD para dados da empresa
 
 **Viés e Fairness:**
 - Garantir que dados de treinamento sejam representativos
@@ -685,7 +683,7 @@ O sistema adotará uma arquitetura em três camadas (3-tier) com separação cla
 
 | Norma/Legislação | Aplicação Específica no Projeto | Medidas de Conformidade |
 |------------------|----------------------------------|-------------------------|
-| **LGPD (Lei nº 13.709/2018)** | Tratamento de dados operacionais e informações de clientes da Famac | • Coleta mínima de dados (apenas parâmetros técnicos necessários)<br>• Política de privacidade interna da Famac<br>• Funcionalidade de exclusão de dados de clientes<br>• Anonimização de dados de clientes finais em datasets<br>• Criptografia de dados em repouso e trânsito<br>• Dados armazenados em infraestrutura da Famac (Brasil) |
+| **LGPD (Lei nº 13.709/2018)** | Tratamento de dados operacionais e especificações técnicas das bombas | • Coleta mínima de dados (apenas parâmetros técnicos necessários)<br>• Política de privacidade interna da Famac<br>• Criptografia de dados em repouso e trânsito<br>• Dados armazenados em infraestrutura da Famac (Brasil) |
 | **OWASP Top 10** | Segurança da aplicação web | • Validação de inputs (prevenção de injeção)<br>• Autenticação JWT segura<br>• HTTPS obrigatório<br>• Content Security Policy<br>• Rate limiting<br>• Logs de auditoria |
 | **ISO/IEC 27001** | Segurança da informação | • Classificação de dados<br>• Controles de acesso (RBAC)<br>• Gestão de incidentes<br>• Backup criptografado<br>• Política de segurança documentada |
 | **OECD AI Principles** | Uso responsável de IA | • Transparência nas predições<br>• Explicabilidade do modelo (SHAP)<br>• Robustez e segurança do sistema<br>• Accountability (logs de decisões)<br>• Human-centered values (ferramenta de apoio) |
