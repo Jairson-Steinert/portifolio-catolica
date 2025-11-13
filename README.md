@@ -35,11 +35,11 @@ A apresentação no congresso substituiu o processo tradicional de aprovação p
 
 A indústria de bombeamento utiliza há décadas fórmulas empíricas de proporcionalidade para ajustar o diâmetro de rotores em bombas centrífugas, buscando adequar a performance da bomba às condições operacionais desejadas. Essas fórmulas relacionam vazão (Q), pressão (H) e potência (N) ao diâmetro do rotor (D) através de relações matemáticas simples:
 
-$$
+```math
 \frac{Q}{Q_1} = \frac{D}{D_1} \qquad
 \frac{H}{H_1} = \left(\frac{D}{D_1}\right)^2 \qquad
 \frac{N}{N_1} = \left(\frac{D}{D_1}\right)^3
-$$
+```
 
 Embora funcionais como ponto de partida, essas equações apresentam imprecisões significativas quando confrontadas com dados reais de operação. A lacuna entre o desempenho projetado e o resultado efetivo gera perdas de eficiência, aumento de custos operacionais e desperdício energético.
 
@@ -869,15 +869,18 @@ O sistema adotará uma arquitetura em três camadas (3-tier) com separação cla
 **Leis de Afinidade para Bombas Centrífugas:**
 
 Para variação de diâmetro do rotor (rotação constante):
-$$
+
+```math
 \frac{Q_2}{Q_1} = \frac{D_2}{D_1}
-$$
-$$
+```
+
+```math
 \frac{H_2}{H_1} = \left(\frac{D_2}{D_1}\right)^2
-$$
-$$
+```
+
+```math
 \frac{P_2}{P_1} = \left(\frac{D_2}{D_1}\right)^3
-$$
+```
 
 Onde:
 - Q = Vazão (m³/h)
